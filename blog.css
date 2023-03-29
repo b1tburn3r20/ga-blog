@@ -320,6 +320,11 @@ footer {
   font-weight: bold;
   text-decoration: underline;
 }
+#moshify {
+  font-size: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
 a {
   color: rgb(234, 234, 234);
   text-decoration: none;
@@ -382,18 +387,61 @@ nav a:hover {
 }
 .webp-wrapper {
   position: relative;
-  height: 5rem;
   background: rgba(0, 0, 0, 0.3);
   width: 100vw;
   padding: 1rem;
 }
-.webp-wrapper p {
-  position: absolute;
-}
+
 ul li:first-of-type {
   position: absolute;
   top: 1rem;
   left: 3rem;
   font-weight: 800;
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  .about-me .about-me-content,
+  .my-dream .my-dream-content,
+  .my-journey .my-journey-content {
+    align-items: center;
+  }
+
+  .about-me .about-me-content p,
+  .my-dream .my-dream-content p,
+  .my-journey .my-journey-content p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-me-content,
+  .my-dream-content,
+  .my-journey-content {
+    height: auto;
+  }
+  .webp-wrapper {
+    position: relative;
+    height: 100%;
+  }
+
+  nav ul li:not(:first-child) {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: -0.5vh;
+    right: -4vw;
+  }
 }
