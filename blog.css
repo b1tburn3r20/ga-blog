@@ -312,6 +312,7 @@ footer {
 #hyperion {
   font-size: inherit;
   font-weight: bold;
+  text-decoration: underline;
 }
 a {
   color: rgb(234, 234, 234);
