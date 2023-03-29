@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans serrif;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-size: repeat;
+  background-repeat: repeat;
+  background-position: center;
+  color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+footer {
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+main {
+  min-height: calc(100vh - 5rem);
+  position: relative;
+}
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #f2f2f2;
+  --accent-color: #00a8e8;
+  --header-color: #272727;
+  --main-color: #2c2c2c;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+  color: var(--text-color);
+}
+
+main {
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.45) 50%,
+      transparent 10%
+    ),
+    linear-gradient(
+      45deg,
+      rgba(255, 89, 0, 0.56),
+      rgb(255, 255, 255) 40%,
+      rgb(206, 244, 255)
+    );
+
+  background-size: cover;
+  background-position: center;
+  color: #f2f2f2;
+  position: relative;
+  z-index: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  color: var(--text-color);
+}
+.about-me {
+  background-image: url("/images/flowerladyyellow.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-me-content {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-me h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-me p {
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.my-dream {
+  background-image: url("images/reversedblue.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.my-dream-content {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.my-dream h2 {
+  color: #222;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.my-dream p {
+  color: #444;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.my-dream p {
+  color: #444;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.my-journey {
+  background-image: url("images/flowerladyblack.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.my-journey-content {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.my-journey h2 {
+  color: rgb(250, 250, 250);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.my-journey p {
+  color: rgb(245, 245, 245);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.about-me .about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-me .about-me-content p {
+  width: 50%;
+}
+
+.my-dream .my-dream-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.my-dream .my-dream-content p {
+  width: 50%;
+  text-align: right;
+}
+
+.my-journey .my-journey-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.my-journey .my-journey-content p {
+  width: 50%;
+  text-align: left;
+}
+
+.about-me-content,
+.my-dream-content,
+.my-journey-content {
+  overflow: hidden;
+  height: 90px;
+  transition: height 0.5s;
+  cursor: pointer;
+}
+.content-wrapper {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.content-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    linear-gradient(245deg, rgba(0, 0, 0, 1) 50%, transparent 10%)
+  );
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.read-more {
+  width: 50%;
+  margin-top: 30rem;
+  padding: 2rem;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#hyperion {
+  font-size: inherit;
+  font-weight: bold;
+}
+a {
+  color: rgb(234, 234, 234);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(236, 236, 236);
+  text-decoration: none;
+}
+nav {
+  top: 0;
+  height: 2rem;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #f2f2f2;
+  --accent-color: #00a8e8;
+  --header-color: #272727;
+  --main-color: #2c2c2c;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+.logo {
+  color: var(--accent-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.webp-wrapper {
+  position: relative;
+  height: 5rem;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  padding: 1rem;
+}
+.webp-wrapper p {
+  position: absolute;
+}
+ul li:first-of-type {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+  font-weight: 800;
+  font-size: 2rem;
+}
