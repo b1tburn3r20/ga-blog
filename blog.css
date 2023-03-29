@@ -3,6 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Dark mode scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2c2c2c;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(248, 248, 248);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
 
 body {
   font-family: "Open Sans", sans serrif;
@@ -385,6 +403,7 @@ nav a:hover {
   font-size: 2rem;
   font-weight: bold;
 }
+
 .webp-wrapper {
   position: relative;
   background: rgba(0, 0, 0, 0.3);
